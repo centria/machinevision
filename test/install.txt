@@ -1,0 +1,25 @@
+cd /media/centria/VBox_GAs_7.1.4/
+sudo ./VBoxLinuxAdditions.run
+
+
+sudo apt update -y
+
+sudo apt install python3-opencv
+
+sudo apt install snapd
+
+sudo snap install --classic code
+
+sudo apt-get install python3-tk
+
+sudo adduser $USER vboxsf
+
+#Ultralytics
+sudo apt install python3-pip
+pip install opencv-python --break-system-packages
+#pip install ultralytics --break-system-packages
+pip install git+https://github.com/ultralytics/ultralytics.git --break-system-packages
+pip install lap --break-system-packages
+
+#training
+pip install labelImg --break-system-packages
