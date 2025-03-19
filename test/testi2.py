@@ -1,8 +1,8 @@
 import cv2
 
 # Open the default camera
-cap = cv2.VideoCapture(0)
-#cap = cv2.VideoCapture("/home/centria/projects/machinevision/test vid.mp4")
+#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("/home/centria/projects/machinevision/test vid.mp4")
 
 
 
