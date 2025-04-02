@@ -1,0 +1,7 @@
+train: /home/centria/projects/training/dataset/images/train
+val: /home/centria/projects/training/dataset/images/val
+nc: 1  
+names: ['aku']  
+labels:
+  train: /home/centria/projects/training/dataset/labels/train
+  val: /home/centria/projects/training/dataset/labels/val

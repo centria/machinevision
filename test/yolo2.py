@@ -1,9 +1,11 @@
 import cv2
 from ultralytics import YOLO
 
-yolo = YOLO('yolov8n.pt') #https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjv9a-K7M-LAxUlExAIHarULt0QFnoECBEQAQ&url=https%3A%2F%2Fgithub.com%2Fultralytics%2Fassets%2Freleases%2Fdownload%2Fv8.1.0%2Fyolov8n.pt&usg=AOvVaw0xT1jI0XjDZI-PC-WWmzci&opi=89978449
+#yolo = YOLO('yolov8n.pt') #https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjv9a-K7M-LAxUlExAIHarULt0QFnoECBEQAQ&url=https%3A%2F%2Fgithub.com%2Fultralytics%2Fassets%2Freleases%2Fdownload%2Fv8.1.0%2Fyolov8n.pt&usg=AOvVaw0xT1jI0XjDZI-PC-WWmzci&opi=89978449
 # Open the default camera
 #cap = cv2.VideoCapture(0)
+#yolo = YOLO('best.pt')
+yolo = YOLO('yolov8n.pt')
 cap = cv2.VideoCapture("/home/centria/projects/machinevision/test vid.mp4")
 
 
