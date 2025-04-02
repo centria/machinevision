@@ -64,9 +64,12 @@ def set_current_frame_index(val):
                     imageWidth = int(newWidth * width)
                 resizedframe = cv2.resize(frame, (imageWidth - 2, imageHeight - 2))
                 print(f"width:{imageWidth} height:{imageHeight} lw:{label_width} lh:{label_height}") 
+                resizedframe = cv2.cvtColor(resizedframe, cv2.COLOR_BGR2RGB)
+            else:
+                resizedframe = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
             
-            resizedframe = cv2.cvtColor(resizedframe, cv2.COLOR_BGR2RGB)
+            
             img = Image.fromarray(resizedframe)
             imgtk = ImageTk.PhotoImage(image=img)
 
